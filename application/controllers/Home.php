@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Home extends CI_Controller {
 
-    private $nama_controller = "Home";
+    private $nama_controller = "Beranda";
     public function __construct()
     {
         parent::__construct();
@@ -17,7 +17,7 @@ class Home extends CI_Controller {
         $data['title'] = $this->nama_controller." | "." E Surat Dukuh Dempok";
         $data['title_content'] = $this->nama_controller;
      
-        $this->make_bread->add('Home', 'testing');
+        $this->make_bread->add('Beranda', 'testing');
         $this->make_bread->add('E Surat');
         $breadcrumb = $this->make_bread->output();
         $data['breadcrumb'] = $breadcrumb;
